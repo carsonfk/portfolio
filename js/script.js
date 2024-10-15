@@ -53,7 +53,7 @@ const sr = ScrollReveal({
 
 sr.reveal('.home__data, .about__container',{}); 
 sr.reveal('.skills__subcontainer',{interval: 2000}); 
-sr.reveal('.home__img, .about__text, .skills__img',{delay: 400}); 
+sr.reveal('.home__img, .skills__img',{delay: 400}); 
 sr.reveal('.home__social-icon',{interval: 200}); 
 sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 
