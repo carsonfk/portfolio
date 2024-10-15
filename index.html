@@ -72,9 +72,13 @@
                     </div>
                     
                     <div>
+                        
+                        <h1>Current Screen Size</h1>
+                        <p id="screen-size"></p>
+                        
                         <h2 class="about__subtitle">Hi!</h2>
-                        <p class="about__text">I'm a first-generation graduate from the University of Washington with a Bachelor's degree in Geography: Data Science and a Minor in Informatics,
-                            giving me a strong foundation in GIS analysis, database management and web development. <br><br>
+                        <p class="about__text">I'm a first-generation graduate from the University of Washington with a Bachelor's degree in Geography: Data Science and a Minor in Informatics.
+                            This gives me a strong foundation in GIS analysis, database management and web development. <br><br>
                             I am experienced with a wide array of software applications and capable of transforming complex data into actionable business solutions and insights.</p>           
                     </div>                                   
                 </div>
@@ -210,19 +214,13 @@
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-                <div class="button-container">
-                    <a href="doc/Klein, Carson - Resume.pdf" download="Shawn-Leonard-Resume.pdf" class="download-button">Download Resume</a>
+                <div class="contact__container">
+                    <p><strong>Phone:</strong> (206) 492-3052</p>
+                    <p><strong>Email:</strong> <a href="mailto:carson.f.k@outlook.com">carson.f.k@outlook.com</a></p>
                 </div>
-                    
-                <!-- Contact container -->
-                <!-- <div class="contact__container bd-grid">
-                    <form action="assets/submit-form.php" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="email" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
-                    </form>
-                </div> -->
+                <div class="button-container">
+                    <a href="doc/Klein, Carson - Resume.pdf" download="Klein, Carson - Resume.pdf" class="download-button">Download Resume</a>
+                </div>
             </section>
         </main>
 
@@ -238,6 +236,17 @@
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script>
+            function displayScreenSize() {
+                var width = window.innerWidth;
+                var height = window.innerHeight;
+                document.getElementById('screen-size').textContent = width + ' x ' + height;
+            }
+
+            window.addEventListener('resize', displayScreenSize);
+            displayScreenSize();
+        </script>
 
         <!--===== MAIN JS =====-->
         <script src="js/script.js"></script>
