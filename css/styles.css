@@ -48,7 +48,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
-  background-image: url('../img/test.jpg');
+  background-image: url('../img/test2.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
