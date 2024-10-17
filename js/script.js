@@ -61,3 +61,19 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
 //sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
 //sr.reveal('.home__social-icon',{interval: 200}); 
 //sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
+
+/*===== SKILL ACCORDION REVEAL ====*/
+
+var acc = document.getElementsByClassName("skills__names");
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      console.log("hello world");
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
